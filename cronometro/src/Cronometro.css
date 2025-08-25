@@ -1,0 +1,58 @@
+/* src/Cronometro.css */
+
+.cronometro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tempo {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+}
+
+.botao {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.botao:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.iniciar {
+  background-color: #00c853;
+  color: white;
+}
+
+.pausar {
+  background-color: #ffab00;
+  color: white;
+}
+
+.zerar {
+  background-color: #d50000;
+  color: white;
+}
+
+.botao:hover:not(:disabled) {
+  transform: scale(1.05);
+}
